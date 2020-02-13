@@ -28,12 +28,12 @@ Plese check the sample folder to run the examples.
 
 `cols: 3, height: 90, paddingBetweenRows: 16, imgSrcs: [...], titles: [...]`
 
-[sample1](docs/01.png)
+[sample1](docs/01.PNG)
 
 `cols: 4, height: 70, paddingBetweenRows: 16`
 
-[sample2](docs/02.png)
+[sample2](docs/02.PNG)
 
 `cols: 1, height: 70, paddingBetweenRows: 16`
 
-[sample3](docs/03.png)
+[sample3](docs/03.PNG)
