@@ -1,21 +1,21 @@
 const React = require('react')
 const { Text, View, Image } = require('react-native')
+const Blank = require('./Blank')
 
 function gridImg(widthPercent, imgHeight, imgSrc){
-  return <View style={{height: imgHeight, width: widthPercent + '%', flex:1, alignItems: 'center', justifyContent: 'center' }}>
+  return <View style={{height: imgHeight, width: widthPercent + '%', flex:1, alignItems: 'center', justifyContent: 'center'}}>
     {
       imgSrc == null ? null : 
       <Image
-        style={{width: imgHeight, height: imgHeight, resizeMode: 'cover'}}
+        style={{width: imgHeight, height: imgHeight, resizeMode: 'contain'}}
         source={{uri: imgSrc}} /> 
     }
   </View>
 }
 
 function gridSubTitle(widthPercent, title){
-  return <View style={{width: widthPercent+'%', flex:1, alignItems: 'center', justifyContent: 'center' }}>
+  return <View style={{width: widthPercent+'%', flex:1, alignItems: 'center', justifyContent: 'center',}}>
     {title == null ? null : <Text>{title}</Text>}
-    
   </View>
 }
 
@@ -36,7 +36,7 @@ function subtitleRow(titlesSlice, widthPercent, cols){
 }
 
 
-function gridRows(cols, imgHeight, titles, imgSrcs){
+function gridRows(cols, imgHeight, titles, imgSrcs, paddingBetweenRows){
   const rows = []
   const widthPercent = Math.floor(100 / cols);
   const gridNum = Math.max(titles.length, imgSrcs.length);
@@ -54,6 +54,7 @@ function gridRows(cols, imgHeight, titles, imgSrcs){
         <View style={{flex: 1, flexDirection:'row'}}>
           {subtitleRow(titlesSlice, widthPercent, cols)}
         </View>
+		<Blank size={paddingBetweenRows} />
       </View>
     ))
   }
@@ -61,10 +62,10 @@ function gridRows(cols, imgHeight, titles, imgSrcs){
   return rows
 }
 
-module.exports = ({cols = 3, height = 100, titles = [], imgSrcs = []}) => {
+module.exports = ({cols = 3, height = 100, titles = [], imgSrcs = [], paddingBetweenRows = 0}) => {
   return (
-    <View>
-      {gridRows(cols, height, titles, imgSrcs)}
+    <View style={{width: '100%'}}>
+      {gridRows(cols, height, titles, imgSrcs, paddingBetweenRows)}
     </View>
   )
 }
