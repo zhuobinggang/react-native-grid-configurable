@@ -21,6 +21,17 @@ then
 3. imgSrcs: `['url1', 'url2', 'url3']`
 4. titles: `['title1', 'title2', 'title3']`
 5. paddingBetweenRows: Padding(pixels) between rows, default is 0
+6. callbacks: `[() => {console.log('Callback of first image')}]`
+
+### On different containers
+
+Narrow
+
+![sample4](https://github.com/zhuobinggang/react-native-grid-configurable/blob/master/docs/04.PNG)
+
+Wide
+
+![sample5](https://github.com/zhuobinggang/react-native-grid-configurable/blob/master/docs/05.PNG)
 
 ### Examples
 
