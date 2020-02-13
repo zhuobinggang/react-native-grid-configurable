@@ -1,0 +1,1 @@
+[ ] 1. publish the lib to npm and require it in the sample project
