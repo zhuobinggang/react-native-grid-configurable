@@ -2,8 +2,8 @@ const React = require('react')
 const { Text, View, Image, TouchableHighlight } = require('react-native')
 const Blank = require('./Blank')
 
-function gridImg(widthPercent, imgHeight, imgSrc, cb){
-  return <View style={{height: imgHeight, width: widthPercent + '%', flex:1, alignItems: 'center', justifyContent: 'center'}}>
+function gridImg(widthPercent, imgHeight, imgSrc, cb, index){
+  return <View style={{height: imgHeight, width: widthPercent + '%', flex:1, alignItems: 'center', justifyContent: 'center'}}  key={index}>
     {
       imgSrc == null ? null : 
       <TouchableHighlight onPress={() => {return cb!=null ? cb() : null}} >
@@ -16,8 +16,8 @@ function gridImg(widthPercent, imgHeight, imgSrc, cb){
   </View>
 }
 
-function gridSubTitle(widthPercent, title, cb){
-  return <View style={{width: widthPercent+'%', flex:1, alignItems: 'center', justifyContent: 'center',}} >
+function gridSubTitle(widthPercent, title, cb, index){
+  return <View style={{width: widthPercent+'%', flex:1, alignItems: 'center', justifyContent: 'center',}}  key={index}>
     {title == null ? null : <Text>{title}</Text>}
   </View>
 }
@@ -25,7 +25,7 @@ function gridSubTitle(widthPercent, title, cb){
 function imgRow(imgSrcsSlice, widthPercent, imgHeight, cols, callbackSlice){
   const result = []
   for(let i = 0 ;i< cols; i++){
-    result.push(gridImg(widthPercent, imgHeight, imgSrcsSlice[i], callbackSlice[i]))
+    result.push(gridImg(widthPercent, imgHeight, imgSrcsSlice[i], callbackSlice[i], i))
   }
   return result
 }
@@ -33,7 +33,7 @@ function imgRow(imgSrcsSlice, widthPercent, imgHeight, cols, callbackSlice){
 function subtitleRow(titlesSlice, widthPercent, cols, callbackSlice){
   const result = []
   for(let i = 0 ;i< cols; i++){
-    result.push(gridSubTitle(widthPercent, titlesSlice[i], callbackSlice[i]))
+    result.push(gridSubTitle(widthPercent, titlesSlice[i], callbackSlice[i], i))
   }
   return result
 }
@@ -51,7 +51,7 @@ function gridRows(cols, imgHeight, titles, imgSrcs, paddingBetweenRows, callback
     const titlesSlice = titles.slice(offset, offset + cols);
     const callbackSlice = callbacks.slice(offset, offset + cols);
     rows.push((
-      <View>
+      <View key={i}>
         <View style={{flex: 1, flexDirection:'row', height: imgHeight}}>
           {imgRow(imgSrcsSlice, widthPercent, imgHeight, cols, callbackSlice)}
         </View>
