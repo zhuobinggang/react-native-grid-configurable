@@ -2,6 +2,10 @@ const React = require('react')
 const { Text, View, Image, TouchableHighlight } = require('react-native')
 const Blank = require('./Blank')
 
+function isRemoteSrc(src){
+  return /^http/.test(src)
+}
+
 function gridImg(widthPercent, imgHeight, imgSrc, cb, index){
   return <View style={{height: imgHeight, width: widthPercent + '%', flex:1, alignItems: 'center', justifyContent: 'center'}}  key={index}>
     {
@@ -9,7 +13,7 @@ function gridImg(widthPercent, imgHeight, imgSrc, cb, index){
       <TouchableHighlight onPress={() => {return cb!=null ? cb() : null}} >
         <Image
           style={{width: imgHeight, height: imgHeight, resizeMode: 'contain'}}
-          source={{uri: imgSrc}} /> 
+          source={isRemoteSrc(imgSrc) ? {uri: imgSrc} : imgSrc} /> 
       </TouchableHighlight>
 
     }
@@ -51,11 +55,11 @@ function gridRows(cols, imgHeight, titles, imgSrcs, paddingBetweenRows, callback
     const titlesSlice = titles.slice(offset, offset + cols);
     const callbackSlice = callbacks.slice(offset, offset + cols);
     rows.push((
-      <View key={i}>
-        <View style={{flex: 1, flexDirection:'row', height: imgHeight}}>
+	  <View key={i}>
+        <View style={{flexDirection:'row', height: imgHeight}}>
           {imgRow(imgSrcsSlice, widthPercent, imgHeight, cols, callbackSlice)}
         </View>
-        <View style={{flex: 1, flexDirection:'row'}}>
+        <View style={{flexDirection:'row'}}>
           {subtitleRow(titlesSlice, widthPercent, cols, callbackSlice)}
         </View>
 		<Blank size={paddingBetweenRows} />
@@ -68,7 +72,7 @@ function gridRows(cols, imgHeight, titles, imgSrcs, paddingBetweenRows, callback
 
 module.exports = ({cols = 3, height = 100, titles = [], imgSrcs = [], paddingBetweenRows = 0, callbacks= []}) => {
   return (
-    <View style={{width: '100%'}}>
+    <View style={{width: '100%', }}>
       {gridRows(cols, height, titles, imgSrcs, paddingBetweenRows, callbacks)}
     </View>
   )
