@@ -1,5 +1,5 @@
 const React = require('react')
-const { Text, View, Image, TouchableHighlight } = require('react-native')
+const { Text, View, Image, TouchableHighlight, ScrollView } = require('react-native')
 const Blank = require('./Blank')
 
 function isRemoteSrc(src){
@@ -72,8 +72,8 @@ function gridRows(cols, imgHeight, titles, imgSrcs, paddingBetweenRows, callback
 
 module.exports = ({cols = 3, height = 100, titles = [], imgSrcs = [], paddingBetweenRows = 0, callbacks= []}) => {
   return (
-    <View style={{width: '100%', }}>
+    <ScrollView style={{width: '100%', }}>
       {gridRows(cols, height, titles, imgSrcs, paddingBetweenRows, callbacks)}
-    </View>
+    </ScrollView>
   )
 }
