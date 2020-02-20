@@ -70,12 +70,27 @@ function gridRows(cols, imgHeight, titles, imgSrcs, paddingBetweenRows, callback
   return rows
 }
 
- 
+function arrayEqual(array1, array2){
+  return array1.length === array2.length && array1.every((value, index) => value === array2[index])
+}
 
-module.exports = React.memo(({cols = 3, height = 100, titles = [], imgSrcs = [], paddingBetweenRows = 0, callbacks= []}) => {
-  return (
-    <ScrollView style={{width: '100%', }}>
-      {gridRows(cols, height, titles, imgSrcs, paddingBetweenRows, callbacks)}
-    </ScrollView>
-  )
-})
+export default class Grid extends React.Component{
+  constructor(props){
+    super(props)
+  }
+  shouldComponentUpdate = (nextProps, _) => {
+    if(arrayEqual(nextProps.imgSrcs, this.props.imgSrcs)){
+      return false;
+    }else{
+      return true;
+    }
+  }
+  render(){
+    const {cols = 3, height = 100, titles = [], imgSrcs = [], paddingBetweenRows = 0, callbacks= []} = this.props;
+    return (
+      <ScrollView style={{width: '100%', }}>
+        {gridRows(cols, height, titles, imgSrcs, paddingBetweenRows, callbacks)}
+      </ScrollView>
+    )
+  }
+}
