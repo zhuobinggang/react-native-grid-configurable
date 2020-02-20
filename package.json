@@ -1,6 +1,6 @@
 {
   "name": "react-native-grid-configurable",
-  "version": "3.3.0",
+  "version": "3.4.0",
   "description": "A component create grid for you",
   "main": "Grid.js",
   "scripts": {

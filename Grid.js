@@ -70,10 +70,12 @@ function gridRows(cols, imgHeight, titles, imgSrcs, paddingBetweenRows, callback
   return rows
 }
 
-module.exports = ({cols = 3, height = 100, titles = [], imgSrcs = [], paddingBetweenRows = 0, callbacks= []}) => {
+ 
+
+module.exports = React.memo(({cols = 3, height = 100, titles = [], imgSrcs = [], paddingBetweenRows = 0, callbacks= []}) => {
   return (
     <ScrollView style={{width: '100%', }}>
       {gridRows(cols, height, titles, imgSrcs, paddingBetweenRows, callbacks)}
     </ScrollView>
   )
-}
+})
