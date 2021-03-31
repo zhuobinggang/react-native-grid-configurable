@@ -4095,10 +4095,10 @@ react-is@^16.8.1, react-is@^16.8.4:
   resolved "https://registry.npm.taobao.org/react-is/download/react-is-16.12.0.tgz#2cc0fe0fba742d97fd527c42a13bec4eeb06241c"
   integrity sha1-LMD+D7p0LZf9UnxCoTvsTusGJBw=
 
-react-native-grid-configurable@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npm.taobao.org/react-native-grid-configurable/download/react-native-grid-configurable-1.0.0.tgz#06ac4757c5d35191c02a9e25c15eb165643326eb"
-  integrity sha1-BqxHV8XTUZHAKp4lwV6xZWQzJus=
+react-native-grid-configurable@^3.4.0:
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/react-native-grid-configurable/-/react-native-grid-configurable-3.4.1.tgz#afc8cf05d010f8be069a6a9a7543619b7d116e94"
+  integrity sha512-5RjC1ZKtZYCIUWWQXbcF40s1UoMI9r8ti8p1t98cSX0xCYyJ/jOV3mZ5oOE9m9L7qpy0Pv7SkBq5yhf9C1jOWA==
 
 react-native-view-shot@3.0.2:
   version "3.0.2"
@@ -5152,9 +5152,9 @@ xtend@~4.0.1:
   integrity sha1-u3J3n1+kZRhrH0OPZ0+jR/2121Q=
 
 y18n@^3.2.1:
-  version "3.2.1"
-  resolved "https://registry.npm.taobao.org/y18n/download/y18n-3.2.1.tgz#6d15fba884c08679c0d77e88e7759e811e07fa41"
-  integrity sha1-bRX7qITAhnnA136I53WegR4H+kE=
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/y18n/-/y18n-3.2.2.tgz#85c901bd6470ce71fc4bb723ad209b70f7f28696"
+  integrity sha512-uGZHXkHnhF0XeeAPgnKfPv1bgKAYyVvmNL1xlKsPYZPaIHxGti2hHqvOCQv71XMsLxu1QjergkqogUnms5D3YQ==
 
 "y18n@^3.2.1 || ^4.0.0":
   version "4.0.0"
