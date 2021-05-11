@@ -3126,9 +3126,9 @@ lodash.throttle@^4.1.1:
   integrity sha1-wj6RtxAkKscMN/HhzaknTMOb8vQ=
 
 lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.3.0, lodash@^4.5.0, lodash@^4.6.0:
-  version "4.17.15"
-  resolved "https://registry.npm.taobao.org/lodash/download/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
-  integrity sha1-tEf2ZwoEVbv+7dETku/zMOoJdUg=
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
+  integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
 
 log-symbols@^2.2.0:
   version "2.2.0"
@@ -4095,10 +4095,10 @@ react-is@^16.8.1, react-is@^16.8.4:
   resolved "https://registry.npm.taobao.org/react-is/download/react-is-16.12.0.tgz#2cc0fe0fba742d97fd527c42a13bec4eeb06241c"
   integrity sha1-LMD+D7p0LZf9UnxCoTvsTusGJBw=
 
-react-native-grid-configurable@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npm.taobao.org/react-native-grid-configurable/download/react-native-grid-configurable-1.0.0.tgz#06ac4757c5d35191c02a9e25c15eb165643326eb"
-  integrity sha1-BqxHV8XTUZHAKp4lwV6xZWQzJus=
+react-native-grid-configurable@^3.4.0:
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/react-native-grid-configurable/-/react-native-grid-configurable-3.4.1.tgz#afc8cf05d010f8be069a6a9a7543619b7d116e94"
+  integrity sha512-5RjC1ZKtZYCIUWWQXbcF40s1UoMI9r8ti8p1t98cSX0xCYyJ/jOV3mZ5oOE9m9L7qpy0Pv7SkBq5yhf9C1jOWA==
 
 react-native-view-shot@3.0.2:
   version "3.0.2"
