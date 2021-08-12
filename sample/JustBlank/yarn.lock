@@ -3928,9 +3928,9 @@ path-key@^2.0.0, path-key@^2.0.1:
   integrity sha1-QRyttXTFoUDTpLGRDUDYDMn0C0A=
 
 path-parse@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.npm.taobao.org/path-parse/download/path-parse-1.0.6.tgz#d62dbb5679405d72c4737ec58600e9ddcf06d24c"
-  integrity sha1-1i27VnlAXXLEc37FhgDp3c8G0kw=
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.7.tgz#fbc114b60ca42b30d9daf5858e4bd68bbedb6735"
+  integrity sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==
 
 path-type@^2.0.0:
   version "2.0.0"
@@ -4095,10 +4095,10 @@ react-is@^16.8.1, react-is@^16.8.4:
   resolved "https://registry.npm.taobao.org/react-is/download/react-is-16.12.0.tgz#2cc0fe0fba742d97fd527c42a13bec4eeb06241c"
   integrity sha1-LMD+D7p0LZf9UnxCoTvsTusGJBw=
 
-react-native-grid-configurable@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npm.taobao.org/react-native-grid-configurable/download/react-native-grid-configurable-1.0.0.tgz#06ac4757c5d35191c02a9e25c15eb165643326eb"
-  integrity sha1-BqxHV8XTUZHAKp4lwV6xZWQzJus=
+react-native-grid-configurable@^3.4.0:
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/react-native-grid-configurable/-/react-native-grid-configurable-3.4.1.tgz#afc8cf05d010f8be069a6a9a7543619b7d116e94"
+  integrity sha512-5RjC1ZKtZYCIUWWQXbcF40s1UoMI9r8ti8p1t98cSX0xCYyJ/jOV3mZ5oOE9m9L7qpy0Pv7SkBq5yhf9C1jOWA==
 
 react-native-view-shot@3.0.2:
   version "3.0.2"
