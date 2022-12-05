@@ -1922,9 +1922,9 @@ decamelize@^1.1.1, decamelize@^1.2.0:
   integrity sha1-9lNNFRSCabIDUue+4m9QH5oZEpA=
 
 decode-uri-component@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.npm.taobao.org/decode-uri-component/download/decode-uri-component-0.2.0.tgz#eb3913333458775cb84cd1a1fae062106bb87545"
-  integrity sha1-6zkTMzRYd1y4TNGh+uBiEGu4dUU=
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.2.tgz#e69dbe25d37941171dd540e024c444cd5188e1e9"
+  integrity sha512-FqUYQ+8o158GyGTrMFJms9qh3CqTKvAqgqsTnkLI8sKu0028orqBhxNMFkFen0zGyg6epACD32pjVk58ngIErQ==
 
 deep-assign@^3.0.0:
   version "3.0.0"
@@ -4095,10 +4095,10 @@ react-is@^16.8.1, react-is@^16.8.4:
   resolved "https://registry.npm.taobao.org/react-is/download/react-is-16.12.0.tgz#2cc0fe0fba742d97fd527c42a13bec4eeb06241c"
   integrity sha1-LMD+D7p0LZf9UnxCoTvsTusGJBw=
 
-react-native-grid-configurable@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npm.taobao.org/react-native-grid-configurable/download/react-native-grid-configurable-1.0.0.tgz#06ac4757c5d35191c02a9e25c15eb165643326eb"
-  integrity sha1-BqxHV8XTUZHAKp4lwV6xZWQzJus=
+react-native-grid-configurable@^3.4.0:
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/react-native-grid-configurable/-/react-native-grid-configurable-3.4.1.tgz#afc8cf05d010f8be069a6a9a7543619b7d116e94"
+  integrity sha512-5RjC1ZKtZYCIUWWQXbcF40s1UoMI9r8ti8p1t98cSX0xCYyJ/jOV3mZ5oOE9m9L7qpy0Pv7SkBq5yhf9C1jOWA==
 
 react-native-view-shot@3.0.2:
   version "3.0.2"
